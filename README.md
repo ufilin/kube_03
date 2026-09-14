@@ -3,9 +3,9 @@
 
 Манифесты к заданию:   
 
-[Deploy]:(https://github.com/ufilin/kube_03/blob/main/deploy_task1.yaml)  
-[Service]:(https://github.com/ufilin/kube_03/blob/main/serv_task1.yaml)  
-[Pod]:(https://github.com/ufilin/kube_03/blob/main/pod_task1.yaml)  
+[Deploy](https://github.com/ufilin/kube_03/blob/main/deploy_task1.yaml)  
+[Service](https://github.com/ufilin/kube_03/blob/main/serv_task1.yaml)  
+[Pod](https://github.com/ufilin/kube_03/blob/main/pod_task1.yaml)  
 
 Pods до и после масштабирования
 
@@ -23,8 +23,8 @@ Pods до и после масштабирования
 
 Манифесты к заданию:  
 
-[Deploy]:(https://github.com/ufilin/kube_03/blob/main/deploy_task2.yaml)  
-[Service]:(https://github.com/ufilin/kube_03/blob/main/serv_task2.yaml)  
+[Deploy](https://github.com/ufilin/kube_03/blob/main/deploy_task2.yaml)  
+[Service](https://github.com/ufilin/kube_03/blob/main/serv_task2.yaml)  
 
 
 Создание deploy приложения nginx, без сервиса в состояние Init
