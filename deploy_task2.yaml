@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      initContainers:
+        - name: wait-for-service
+          image: busybox
+          command:
+            - sh
+            - -c
+            - |
+              until nslookup mine.default.svc.cluster.local; do
+                echo "Waiting for service to be available..."
+                sleep 2
+              done
+      containers:
+        - name: web
+          image: nginx:latest
+          ports:
+            - containerPort: 80
